@@ -55,6 +55,11 @@ body {
     font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;;
 }
 
+.txt-5 {
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
+
 .txt-10 {
     font-size: 0.8rem;
 }
@@ -65,7 +70,7 @@ body {
 }
 
 .txt-20 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .txt-bar {
@@ -174,14 +179,12 @@ main {
     flex-direction: column;
 
     /* Debug */
-    border: 2px dashed var(--red-p);
+    background-color: lightcyan;
     min-height: 200px;
 }
 
 .img-section {
     position: relative;
-    /* Debug */
-    border: 2px dashed var(--dark-p);
 }
 
 .square {
@@ -230,8 +233,10 @@ main {
 }
 
 .txt-section {
+    padding-top: 3px;
+
     /* Debug */
-    border: 2px dashed var(--dark-p);
+    background-color: lightseagreen;
 }
 
 

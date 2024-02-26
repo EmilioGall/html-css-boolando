@@ -20,7 +20,7 @@ a {
 }
 
 img {
-    display: inline-block;
+    display: block;
     max-width: 100%;
 }
 
@@ -32,6 +32,7 @@ li {
 /* COMMON */
 
 .container {
+    margin: 0px auto;
     width: 80%;
     min-width: 800px;
 }
@@ -42,10 +43,6 @@ li {
 
 .j-center {
     justify-content: center;
-}
-
-.m-center {
-    margin: 0px auto;
 }
 
 .pad-v-20 {
@@ -59,16 +56,21 @@ body {
 }
 
 .txt-10 {
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 .txt-15 {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: bolder;
 }
 
 .txt-20 {
-    font-size: 2rem;
+    font-size: 1.2rem;
+}
+
+.txt-bar {
+    text-decoration: line-through;
+    padding: 0px 5px;
 }
 
 /* Colors */
@@ -81,7 +83,15 @@ body {
     color: var(--dark-p);
 }
 
-.bg-0 {
+.txt-r {
+    color: var(--red-p);
+}
+
+.bg-w {
+    background-color: var(--white-p);
+}
+
+.bg-o {
     background-color: var(--orange-p);
 }
 
@@ -151,7 +161,85 @@ main {
 
     /* Debug */
     background-color: lightcoral;
+    min-height: 800px;
+}
+
+.cards-grid {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: calc(100%/3);
+    flex-direction: column;
+
+    /* Debug */
+    border: 2px dashed var(--red-p);
+    min-height: 200px;
+}
+
+.img-section {
+    position: relative;
+    /* Debug */
+    border: 2px dashed var(--dark-p);
+}
+
+.square {
+    position: absolute;
+    z-index: 2;
+    right: 0px;
+    top: 20px;
+    text-align: center;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.5em;
+    font-size: 1.5rem;
+}
+
+.banner {
+    position: absolute;
+    z-index: 2;
+    bottom: 20px;
+}
+
+.banner-txt {
+    padding: 2px 5px;
+    margin-right: 5px;
+}
+
+.discount {
+    background-color: var(--red-p);
+}
+
+.sustainability {
+    background-color: var(--green-p);
+}
+
+.card-img-visible {
+    position: relative;
+}
+
+.card-img-hidden {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.img-section:hover .card-img-hidden{
+    display: inline-block;
+}
+
+.txt-section {
+    /* Debug */
+    border: 2px dashed var(--dark-p);
 }
 
 
 /* FOOTER */
+
+footer {
+    background-color: var(--dark-p);
+
+    /* Debug */
+    min-height: 300px;
+}

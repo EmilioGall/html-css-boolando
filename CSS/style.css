@@ -34,19 +34,47 @@ li {
 .container {
     margin: 0px auto;
     width: 80%;
-    min-width: 800px;
+    min-width: 820px;
 }
 
 .flex-container {
     display: flex;
 }
 
+.flex-col {
+    flex-direction: column;
+}
+
 .j-center {
     justify-content: center;
 }
 
+.j-end {
+    justify-content: end;
+}
+
+.al-center {
+    align-items: center;
+}
+
 .pad-v-20 {
     padding: 20px 0px;
+}
+
+.pad-v-10 {
+    padding: 10px 0px;
+}
+
+.pad-v-10 {
+    padding: 10px 0px;
+}
+
+.marg-l-10 {
+    margin-left: 10px;
+}
+
+.marg-r-10 {
+    margin-right: 10px;
 }
 
 /* Typography */
@@ -65,7 +93,7 @@ body {
 }
 
 .txt-15 {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: bolder;
 }
 
@@ -147,22 +175,17 @@ header {
 
 .nav-section {
     width: 25%;
-    justify-content: end;
     align-items: center;
 
     /* Debug */
     border: 2px dashed var(--dark-p);
 }
 
-.icon {
-    margin: 0px 0px 0px 10px;
-}
-
 
 /* MAIN */
 
 main {
-    margin: 50px 0px;
+    margin: 40px 0px;
 
     /* Debug */
     background-color: lightcoral;
@@ -177,6 +200,7 @@ main {
 .card {
     width: calc(100%/3);
     flex-direction: column;
+    margin: 20px 0px;
 
     /* Debug */
     background-color: lightcyan;
@@ -244,7 +268,24 @@ main {
 
 footer {
     background-color: var(--dark-p);
+    color: var(--white-p);
+    padding: 30px 0px;
+}
+
+.info-section {
+    width: 75%;
 
     /* Debug */
-    min-height: 300px;
+    background-color: lightgreen;
+}
+
+.socials-section {
+    width: 25%;
+
+    /* Debug */
+    background-color: rgb(42, 154, 42);
+}
+
+.txt-end {
+text-align: end;
 }

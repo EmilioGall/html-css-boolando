@@ -5,3 +5,42 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --white-p: rgba(255, 255, 255, 1);
+    --dark-p: rgba(26, 26, 26, 1);
+    --orange-p: rgba(255, 105, 0, 1);
+    --red-p: rgba(255, 0, 0, 1);
+    --green-p: rgba(0, 128, 0, 1);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
+}
+
+
+/* COMMON */
+
+.container {
+    width: 80%;
+}
+
+/* Typography */
+
+body {
+    font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;;
+}
+
+/* HEADER */
+
+
+/* MAIN */
+
+
+/* FOOTER */

@@ -24,11 +24,32 @@ img {
     max-width: 100%;
 }
 
+li {
+    list-style: none;
+}
+
 
 /* COMMON */
 
 .container {
     width: 80%;
+    min-width: 800px;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.j-center {
+    justify-content: center;
+}
+
+.m-center {
+    margin: 0px auto;
+}
+
+.pad-v-20 {
+    padding: 20px 0px;
 }
 
 /* Typography */
@@ -37,10 +58,100 @@ body {
     font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;;
 }
 
+.txt-10 {
+    font-size: 1rem;
+}
+
+.txt-15 {
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.txt-20 {
+    font-size: 2rem;
+}
+
+/* Colors */
+
+.txt-w {
+    color: var(--white-p);
+}
+
+.txt-d {
+    color: var(--dark-p);
+}
+
+.bg-0 {
+    background-color: var(--orange-p);
+}
+
+.bg-g {
+    background-color: var(--green-p);
+}
+
+.bg-r {
+    background-color: var(--red-p);
+}
+
+.bg-d {
+    background-color: var(--dark-p);
+}
+
+
 /* HEADER */
+
+header {
+    background-color: var(--orange-p);
+    color: var(--white-p);
+}
+
+.categories-section {
+    width: 25%;
+    align-items: center;
+
+    /* Debug */
+    border: 2px dashed var(--dark-p);
+}
+
+.category {
+    margin: 0px 10px 0px 0px;
+}
+
+.logo-section {
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+
+    /* Debug */
+    border: 2px dashed var(--dark-p);
+}
+
+.logo-img {
+    max-height: 2rem;
+}
+
+.nav-section {
+    width: 25%;
+    justify-content: end;
+    align-items: center;
+
+    /* Debug */
+    border: 2px dashed var(--dark-p);
+}
+
+.icon {
+    margin: 0px 0px 0px 10px;
+}
 
 
 /* MAIN */
+
+main {
+    margin: 50px 0px;
+
+    /* Debug */
+    background-color: lightcoral;
+}
 
 
 /* FOOTER */
